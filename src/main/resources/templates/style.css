@@ -1,0 +1,31 @@
+
+body {
+    /* background-color:coral; */
+    }
+ table{
+    margin:100px auto;
+    border:500px 500px ;
+    border-style:double solid;
+    padding:10px 100px;
+    background-color:coral;
+    /* background-color:#aaaaab; */
+    /* text-align:center; */
+    font:blue;
+    
+}
+div
+{
+	margin:auto;
+}
+h2{
+	width: 200px;
+	margin-left:auto;
+	margin-right:auto;
+	border:2.5px;
+	border-style: solid outset;
+	border-color: black;
+	text-align:center;
+}
+input{
+	width:80%;
+}

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+	<title>Get Student Id</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+	<form th:action="@{/updateStudent}" th:object="${student}" th:method="post">
+		Enter student id:<input type="text" th:field="*{id}"/>
+		<button type="submit">View</button>
+		<!-- <button type="submit" th:formaction="@{/updateStudent}" th:method="post" th:object="${student}">Update</button> -->
+	</form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+	<title>Insert title here</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+	<form th:action="get">
+		<table border="1" style="border-style: solid;">
+			<tr>
+				<td>ID</td>
+				<td>NAME</td>
+				<td>MARK</td>
+				<td>STUDENT ID</td>
+			</tr>
+			<tr th:each="score:${scores}">
+				<td th:utext="${score.id}"></td>
+				<td th:utext="${score.name}"></td>
+				<td th:utext="${score.mark}"></td>
+			 	<td th:utext="${score.student.getId()}"></td> 
+			</tr>
+		</table>		
+	</form>		
+</body>
+</html>

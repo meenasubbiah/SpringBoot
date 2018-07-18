@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+	<title>View Score with student Id and subject name</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+
+<form th:action="@{/getScoreByStudentIdAndSubjectNameResult}" th:object="${score}" th:method="post" >
+	Enter student id:<input type="text" th:field="*{student.id}"/><br/>
+	Enter subject name:<td><select name="subject" th:field="*{name}">
+				    <option value="maths">maths</option>
+				    <option value="science">science</option>
+				    <option value="economics">economics</option>
+				    <option value="accounts">accounts</option>
+				  </select>
+				 </td><br/>
+	<input type="submit" value="submit"/>
+</form>
+
+</body>
+</html>

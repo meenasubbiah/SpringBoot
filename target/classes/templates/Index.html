@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Insert title here</title>
+	<!-- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> -->
+	<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+	<div>
+	<table align="center">
+		<tr>
+			<td><h2>Student Menu</h2></td>
+		</tr>
+		<tr>
+			<td><input type="button" onclick="location.href= '/addStudent';" value="Add students"/></td>
+		</tr>
+		<tr>
+			<td><input type="button" onclick="location.href= '/getStudentById';" value="View/Update student"/></td>
+		</tr>
+		<tr>
+			<td><input type="button" onclick="location.href= '/students';" value="View all students"/></td>
+		</tr>
+		<tr>
+			<td><input type="button" onclick="location.href= '/deleteStudent';" value="Delete Student"/></td>
+		</tr>
+		<tr>
+			<td><h2>Score Menu</h2></td>
+		</tr>
+		<tr>
+			<td><input type="button" onclick="location.href= '/addScores';" value="Add Score"/></td>
+		</tr>
+		<tr>
+			<td><input type="button" onclick="location.href= '/students/scores';" value="View All Score"/></td>
+		</tr>
+		<tr>
+			<td><input type="button" onclick="location.href= '/getScoreByStudentId';" value="View Score"/></td>
+		</tr>
+		<tr>
+			<td><input type="button" onclick="location.href= '/getScoreBySubjectName';" value="View Subject Scores"/></td>
+		</tr>
+		<tr>
+			<td><input type="button" onclick="location.href= '/getScoreByStudentIdAndSubjectName';" value="View/Update Score"/></td>
+		</tr>
+	</table>
+	</div>
+
+</body>
+</html>

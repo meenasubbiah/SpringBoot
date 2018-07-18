@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+	<title>Add Score</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+	<h1>Student Form</h1>
+	<form th:action="@{/addScoreResult}" th:object="${score}" th:method="post">
+		
+		<table border="1" style="border-style: solid;">
+			<tr>
+				<td>Subject Name</td>
+				<td><select name="subject" th:field="*{name}">
+				    <option value="maths">maths</option>
+				    <option value="science">science</option>
+				    <option value="economics">economics</option>
+				    <option value="accounts">accounts</option>
+				  </select>
+				 </td>
+			</tr>
+			<tr>
+				<td>mark</td>
+				<td><input type="text" th:field="*{mark}"/></td>
+			</tr>
+			<tr>
+				<td>Student_id</td>
+				<td><input type="text" th:field="*{student}"/></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Add Score"/></td>
+			</tr>			
+	
+		</table>
+	
+	</form>
+</body>
+</html>

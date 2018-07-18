@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+	<title>View Score by Student Id</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<a href="/">Home</a>
+<h1>Score Details</h1>
+<form th:action="@{/updateScore}" th:object="${score}" method="post">
+	<table border="1" style="border-style: solid;">
+		<tr>
+				<td>ID</td>
+				<td>SUBJECT NAME</td>
+				<td>MARK</td>
+				<td>STUDENT ID</td>
+				
+			</tr>
+			<tr>
+				<td><input th:value="${score.id}" th:field="*{id}" readonly="readonly"/></td>
+				<td><input th:value="${score.name}" th:field="*{name}" readonly="readonly"/></td>
+				<td><input th:value="${score.mark}" th:field="*{mark}"/></td>
+				<td><input th:value="${score.student.id}" th:field="*{student.id}" readonly="readonly"/></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Update"/></td>
+				<td><input type="reset" value="Reset"/></td>
+			</tr>
+		
+	</table>
+</form>
+</body>
+</html> 

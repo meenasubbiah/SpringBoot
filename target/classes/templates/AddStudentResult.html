@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+	<title>Insert title here</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<a href="/">Home</a>
+	<p>The following details have been added successfully</p>
+	<table border="1" style="border-style: solid;">
+		<tr>
+			<td>id</td>
+			<td th:text="${student.id}"/>
+		</tr>
+		<tr>
+			<td>name</td>
+			<td th:text="${student.name}"/>
+		</tr>
+	</table>
+</body>
+</html>

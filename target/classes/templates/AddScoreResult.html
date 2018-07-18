@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+	<title>Add Score Result</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+	<p>The following details have been added successfully</p>
+	<table border="1" style="border-style: solid;">
+		<tr>
+			<td>id</td>
+			<td th:text="${score.id}"/>
+		</tr>
+		<tr>
+			<td>name</td>
+			<td th:text="${score.name}"/>
+		</tr>
+		<tr>
+			<td>mark</td>
+			<td th:text="${score.mark}"/>
+		</tr>
+		<tr>
+			<td>Student Id</td>
+			<td th:text="${score.student.id}"/>
+		</tr>
+	</table>
+</body>
+</html>
